@@ -72,17 +72,17 @@ public class Main {
 
 
 
-        time = System.nanoTime();
         System.out.println("решение с помощью танцующих ссылок");
         time = System.nanoTime();
         ConditionMatrix conditionMatrix = new ConditionMatrix(sudocu, size);
-        System.out.println(System.nanoTime() - time);
+        System.out.println(System.nanoTime() - time+" наносекунд");
 
 
         System.out.println("решение грубой силой");
+        time = System.nanoTime();
         BruteForce bruteForce = new BruteForce();
         bruteForce.bruteforce(sudocu);
-        System.out.println(System.nanoTime() - time);
+        System.out.println(System.nanoTime() - time+" наносекунд");
 
     }
 
