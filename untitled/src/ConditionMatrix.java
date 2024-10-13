@@ -28,9 +28,7 @@ public class ConditionMatrix {
        // sayMatr();
         System.out.println("матрица условий построена");
 
-        long time = System.nanoTime();
         DancingLinks dancing = new DancingLinks(headArray);
-        System.out.println(System.nanoTime() - time);
     }
 
     void onlyOneOnCell() {//в каждой кл только 1 цифра
